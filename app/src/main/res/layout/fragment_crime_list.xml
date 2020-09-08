@@ -7,7 +7,5 @@
     android:layout_height="match_parent"
     tools:context=".controller.fragment.Crime_listFragment">
 
-
-
-</>
+</androidx.recyclerview.widget.RecyclerView>
 

@@ -6,13 +6,13 @@ public class Crime {
     private UUID mUUID;
     private String mTitle;
     private String mDescription;
-    private boolean mIs_solved;
+    private boolean solved;
 
     public Crime(String title, String description) {
         mTitle = title;
         mDescription = description;
         mUUID=UUID.randomUUID();
-        mIs_solved=false;
+        solved =true;
     }
 
     public UUID getUUID() {
@@ -35,11 +35,11 @@ public class Crime {
         mDescription = description;
     }
 
-    public boolean isIs_solved() {
-        return mIs_solved;
+    public boolean isSolved() {
+        return solved;
     }
 
-    public void setIs_solved(boolean is_solved) {
-        mIs_solved = is_solved;
+    public void setSolved(boolean solved) {
+        this.solved = solved;
     }
 }

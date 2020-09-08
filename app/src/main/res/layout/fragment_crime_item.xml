@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="16dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".controller.fragment.Crime_itemFragment">
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/item_pic"
+        tools:text="salallalla" />
+
+    <TextView
+        android:id="@+id/item_desc"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/item_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_title"
+        android:layout_alignParentLeft="true"
+        tools:text="kjkdjlsjd" />
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_handcuffs"
+        android:id="@+id/item_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+         />
+
+
+</RelativeLayout>
