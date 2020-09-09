@@ -1,5 +1,6 @@
 package com.example.crimeintent.controller.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.crimeintent.R;
+import com.example.crimeintent.controller.activity.Crime_listActivity;
+import com.example.crimeintent.controller.activity.Detail_view_pagerActivity;
 import com.example.crimeintent.model.Crime;
 import com.example.crimeintent.repository.CrimeRepository;
 
@@ -56,16 +59,18 @@ public class Crime_listFragment extends Fragment {
         TextView mTextView_desc;
         ImageView mImageView_pic;
         Crime mCrime;
-        public CrimeHolder(@NonNull View itemView) {
+        public CrimeHolder(@NonNull final View itemView) {
             super(itemView);
             mTextView_title=itemView.findViewById(R.id.item_title);
             mTextView_desc=itemView.findViewById(R.id.item_desc);
             mImageView_pic=itemView.findViewById(R.id.item_pic);
 
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
+                    Intent intent=Detail_view_pagerActivity.newIntent(getActivity(),mCrime.getUUID());
+                    startActivity(intent);
                 }
             });
         }
