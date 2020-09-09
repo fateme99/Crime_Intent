@@ -18,6 +18,14 @@ public class Crime {
         mDate=date;
     }
 
+    public Date getDate() {
+        return mDate;
+    }
+
+    public void setDate(Date date) {
+        mDate = date;
+    }
+
     public UUID getUUID() {
         return mUUID;
     }

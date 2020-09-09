@@ -11,4 +11,5 @@ public interface IRepository<E> {
     void insertList(List<E> eList);
     void delete(UUID id);
     void update(E e);
+    int getPosition(UUID id);
 }

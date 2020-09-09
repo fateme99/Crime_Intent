@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="50dp"
+    android:gravity="center"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,20 +10,42 @@
     tools:context=".controller.fragment.Detail_view_pagerFragment">
 
     <TextView
-
-        android:id="@+id/title_txtView"
-        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="title" />
-
+        android:text="@string/crime_title_label"/>
     <TextView
-        android:id="@+id/decs_txtView"
-        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        style="?android:listSeparatorTextViewStyle"
+        android:textSize="20sp"
+        android:id="@+id/crime_title"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="description" />
+        android:hint="@string/crime_title_hint"/>
     <TextView
-        android:id="@+id/date_txtView"
-        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_details_label"/>
+    <TextView
+        android:layout_marginBottom="10dp"
+        style="?android:listSeparatorTextViewStyle"
+        android:textSize="20sp"
+        android:id="@+id/crime_decs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:layout_marginBottom="10dp"
+        android:id="@+id/crime_date"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/crime_solved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_solved_label"/>
 
 </LinearLayout>

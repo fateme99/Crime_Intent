@@ -44,6 +44,7 @@ public class Detail_view_pagerActivity extends AppCompatActivity {
     private void initView(){
         List<Crime>crimes=mCrimeRepository.getList();
         mViewPager2.setAdapter(new ViewPagerAdapter(this,crimes));
+        mViewPager2.setCurrentItem(mCrimeRepository.getPosition(mCrimeId));
     }
     private class ViewPagerAdapter extends FragmentStateAdapter{
 
