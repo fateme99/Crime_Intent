@@ -1,18 +1,21 @@
 package com.example.crimeintent.model;
 
+import java.util.Date;
 import java.util.UUID;
 
 public class Crime {
+    private Date mDate;
     private UUID mUUID;
     private String mTitle;
     private String mDescription;
     private boolean solved;
 
-    public Crime(String title, String description) {
+    public Crime(String title, String description,Date date) {
         mTitle = title;
         mDescription = description;
         mUUID=UUID.randomUUID();
         solved =true;
+        mDate=date;
     }
 
     public UUID getUUID() {

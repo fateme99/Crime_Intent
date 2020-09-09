@@ -3,6 +3,7 @@ package com.example.crimeintent.repository;
 import com.example.crimeintent.model.Crime;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -13,23 +14,23 @@ public  class CrimeRepository implements IRepository<Crime>{
     private CrimeRepository() {
 
         mCrimes=new ArrayList<>();
-        mCrimes.add(new Crime("crime1","description for crim1"));
-        mCrimes.add(new Crime("crime2","description for crim2"));
-        mCrimes.add(new Crime("crime3","description for crim3"));
-        mCrimes.add(new Crime("crime4","description for crim4"));
-        mCrimes.add(new Crime("crime5","description for crim5"));
-        mCrimes.add(new Crime("crime6","description for crim6"));
-        mCrimes.add(new Crime("crime7","description for crim7"));
-        mCrimes.add(new Crime("crime8","description for crim8"));
-        mCrimes.add(new Crime("crime9","description for crim9"));
-        mCrimes.add(new Crime("crime10","description for crim10"));
-        mCrimes.add(new Crime("crime11","description for crim11"));
-        mCrimes.add(new Crime("crime12","description for crim12"));
-        mCrimes.add(new Crime("crime13","description for crim13"));
-        mCrimes.add(new Crime("crime14","description for crim14"));
-        mCrimes.add(new Crime("crime15","description for crim15"));
-        mCrimes.add(new Crime("crime16","description for crim16"));
-        mCrimes.add(new Crime("crime17","description for crim17"));
+        mCrimes.add(new Crime("crime1","description for crim1", new Date()));
+        mCrimes.add(new Crime("crime2","description for crim2", new Date()));
+        mCrimes.add(new Crime("crime3","description for crim3", new Date()));
+        mCrimes.add(new Crime("crime4","description for crim4", new Date()));
+        mCrimes.add(new Crime("crime5","description for crim5", new Date()));
+        mCrimes.add(new Crime("crime6","description for crim6", new Date()));
+        mCrimes.add(new Crime("crime7","description for crim7", new Date()));
+        mCrimes.add(new Crime("crime8","description for crim8", new Date()));
+        mCrimes.add(new Crime("crime9","description for crim9", new Date()));
+        mCrimes.add(new Crime("crime10","description for crim10", new Date()));
+        mCrimes.add(new Crime("crime11","description for crim11", new Date()));
+        mCrimes.add(new Crime("crime12","description for crim12", new Date()));
+        mCrimes.add(new Crime("crime13","description for crim13", new Date()));
+        mCrimes.add(new Crime("crime14","description for crim14", new Date()));
+        mCrimes.add(new Crime("crime15","description for crim15", new Date()));
+        mCrimes.add(new Crime("crime16","description for crim16", new Date()));
+        mCrimes.add(new Crime("crime17","description for crim17", new Date()));
     }
 
     public static CrimeRepository getInstance() {
