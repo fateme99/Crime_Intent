@@ -65,6 +65,12 @@ public class Crime_listFragment extends Fragment {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        updateView();
+    }
+
+    @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         inflater.inflate(R.menu.detail_menu,menu);
         super.onCreateOptionsMenu(menu, inflater);

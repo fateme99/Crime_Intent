@@ -51,7 +51,7 @@ public class Detail_view_pagerFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        updateCrime();
+        //updateCrime();
     }
 
     @Override
@@ -74,8 +74,7 @@ public class Detail_view_pagerFragment extends Fragment {
         switch (item.getItemId()){
             case R.id.delete_menuItem:
                 CrimeRepository.getInstance().delete(mCrime.getUUID());
-                Intent intent= Crime_listActivity.newIntent(getActivity());
-                startActivity(intent);
+                getActivity().finish();
                 return true;
         }
         return super.onOptionsItemSelected(item);
