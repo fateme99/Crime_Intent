@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 
-import com.example.crimeintent.controller.fragment.EmptyFragment;
 import com.example.crimeintent.controller.fragment.Crime_listFragment;
 import com.example.crimeintent.repository.CrimeRepository;
 
@@ -18,9 +17,7 @@ public class Crime_listActivity extends SingleFragmentActivity {
 
     @Override
     protected Fragment createFragment() {
-        if (CrimeRepository.getInstance().getList().size()==0){
-            return EmptyFragment.newInstance();
-        }
+
 
         return  Crime_listFragment.newInstance();
     }

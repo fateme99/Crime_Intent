@@ -15,9 +15,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/crime_title_label"/>
-    <TextView
+    <EditText
         android:layout_marginBottom="10dp"
-        style="?android:listSeparatorTextViewStyle"
+
         android:textSize="20sp"
         android:id="@+id/crime_title"
         android:layout_width="match_parent"
@@ -29,9 +29,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/crime_details_label"/>
-    <TextView
+    <EditText
         android:layout_marginBottom="10dp"
-        style="?android:listSeparatorTextViewStyle"
+
         android:textSize="20sp"
         android:id="@+id/crime_decs"
         android:layout_width="match_parent"
