@@ -18,6 +18,11 @@ public class Crime {
         mDate=date;
     }
 
+    public Crime() {
+        mUUID=UUID.randomUUID();
+        mDate=new Date();
+    }
+
     public Date getDate() {
         return mDate;
     }

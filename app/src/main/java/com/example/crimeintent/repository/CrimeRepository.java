@@ -17,9 +17,9 @@ public class CrimeRepository implements IRepository<Crime> {
         mCrimes.add(new Crime("crime1", "description for crim1", new Date()));
         mCrimes.add(new Crime("crime2", "description for crim2", new Date()));
         mCrimes.add(new Crime("crime3", "description for crim3", new Date()));
-        mCrimes.add(new Crime("crime4", "description for crim4", new Date()));
+        /*mCrimes.add(new Crime("crime4", "description for crim4", new Date()));
         mCrimes.add(new Crime("crime5", "description for crim5", new Date()));
-        mCrimes.add(new Crime("crime6", "description for crim6", new Date()));
+        mCrimes.add(new Crime("crime6", "description for crim6", new Date()));*/
         /*mCrimes.add(new Crime("crime7", "description for crim7", new Date()));
         mCrimes.add(new Crime("crime8", "description for crim8", new Date()));
         mCrimes.add(new Crime("crime9", "description for crim9", new Date()));

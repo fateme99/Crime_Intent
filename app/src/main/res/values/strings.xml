@@ -7,4 +7,5 @@
     <string name="crime_details_label">description :</string>
     <string name="crime_solved_label">solve</string>
     <string name="add_crime">add crime</string>
+    <string name="no_crime_alertText">no crime is currently available!</string>
 </resources>
