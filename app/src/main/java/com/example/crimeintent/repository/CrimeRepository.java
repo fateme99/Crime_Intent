@@ -20,7 +20,7 @@ public class CrimeRepository implements IRepository<Crime> {
         mCrimes.add(new Crime("crime4", "description for crim4", new Date()));
         mCrimes.add(new Crime("crime5", "description for crim5", new Date()));
         mCrimes.add(new Crime("crime6", "description for crim6", new Date()));
-        mCrimes.add(new Crime("crime7", "description for crim7", new Date()));
+        /*mCrimes.add(new Crime("crime7", "description for crim7", new Date()));
         mCrimes.add(new Crime("crime8", "description for crim8", new Date()));
         mCrimes.add(new Crime("crime9", "description for crim9", new Date()));
         mCrimes.add(new Crime("crime10", "description for crim10", new Date()));
@@ -30,7 +30,7 @@ public class CrimeRepository implements IRepository<Crime> {
         mCrimes.add(new Crime("crime14", "description for crim14", new Date()));
         mCrimes.add(new Crime("crime15", "description for crim15", new Date()));
         mCrimes.add(new Crime("crime16", "description for crim16", new Date()));
-        mCrimes.add(new Crime("crime17", "description for crim17", new Date()));
+        mCrimes.add(new Crime("crime17", "description for crim17", new Date()));*/
     }
 
 

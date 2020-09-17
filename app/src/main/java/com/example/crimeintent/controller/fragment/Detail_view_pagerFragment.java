@@ -1,5 +1,6 @@
 package com.example.crimeintent.controller.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -15,6 +17,7 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.example.crimeintent.R;
+import com.example.crimeintent.controller.activity.Crime_listActivity;
 import com.example.crimeintent.model.Crime;
 import com.example.crimeintent.repository.CrimeRepository;
 
@@ -54,6 +57,18 @@ public class Detail_view_pagerFragment extends Fragment {
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.detail_menu,menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.delete_menuItem:
+                CrimeRepository.getInstance().delete(mCrime.getUUID());
+                Intent intent= Crime_listActivity.newIntent(getActivity());
+                startActivity(intent);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

@@ -1,14 +1,13 @@
 package com.example.crimeintent.controller.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 
-import com.example.crimeintent.controller.activity.SingleFragmentActivity;
+import com.example.crimeintent.controller.fragment.EmptyFragment;
 import com.example.crimeintent.controller.fragment.Crime_listFragment;
+import com.example.crimeintent.repository.CrimeRepository;
 
 public class Crime_listActivity extends SingleFragmentActivity {
 
@@ -19,6 +18,10 @@ public class Crime_listActivity extends SingleFragmentActivity {
 
     @Override
     protected Fragment createFragment() {
-        return new Crime_listFragment();
+        if (CrimeRepository.getInstance().getList().size()==0){
+            return EmptyFragment.newInstance();
+        }
+
+        return  Crime_listFragment.newInstance();
     }
 }

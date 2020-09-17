@@ -31,6 +31,15 @@ public class Crime_listFragment extends Fragment {
         // Required empty public constructor
     }
 
+    public static Crime_listFragment newInstance() {
+        
+        Bundle args = new Bundle();
+        
+        Crime_listFragment fragment = new Crime_listFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
